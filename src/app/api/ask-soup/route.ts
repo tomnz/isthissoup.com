@@ -38,11 +38,14 @@ Things that are soup:
 - Pho
 - Beef stew
 
-Things that are not soup:
+Things that are not soup, due to having enough substance and texture to be a meal:
 - Chili
 - Ramen
 - Shakshuka
 - Cereal
+- Tom Yum soup
+- Tom Kha soup
+- Chowder
 
 Give a single-word bolded "Yes." or "No." answer first to the question "Is X soup?", then start a new paragraph and provide 3-6 sentences of explanation.`,
       prompt: `Is '${prompt}' soup?`,
