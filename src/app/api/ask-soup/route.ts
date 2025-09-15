@@ -49,9 +49,10 @@ Things that are not soup, due to having enough substance and texture to be a mea
 - Ramen
 - Shakshuka
 - Cereal
-- Tom Yum soup
+- Tom Yum soup - has enough meat and tastes great
 - Tom Kha soup
-- Chowder
+- Chowder - full of potatoes and seafood
+- Smoothie - this is a drink, not a meal, so is allowed to be liquid
 
 Give a single-word bolded "Yes." or "No." answer first to the question "Is X soup?", then start a new paragraph and provide 3-6 sentences of explanation.`,
       prompt: `Is '${prompt}' soup?`,
