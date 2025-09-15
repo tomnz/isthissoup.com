@@ -13,21 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Is This Soup? - The Ultimate Culinary Question",
-  description: "Ask the ultimate question for the modern culinary philosopher. Discover whether your favorite foods qualify as soup with AI-powered wisdom.",
-  keywords: "soup, food, culinary, philosophy, AI, cooking, recipes",
-  authors: [{ name: "Is This Soup" }],
+  title: "Is This Soup?",
+  description: "Gross.",
+  keywords: "soup, food, culinary",
+  authors: [{ name: "Tom Mitchell" }],
   openGraph: {
-    title: "Is This Soup? - The Ultimate Culinary Question",
-    description: "Ask the ultimate question for the modern culinary philosopher. Discover whether your favorite foods qualify as soup with AI-powered wisdom.",
+    title: "Is This Soup?",
+    description: "Gross.",
     url: "https://isthissoup.com",
     siteName: "Is This Soup?",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Is This Soup? - The Ultimate Culinary Question",
-    description: "Ask the ultimate question for the modern culinary philosopher.",
+    title: "Is This Soup?",
+    description: "Gross.",
   },
 };
 
