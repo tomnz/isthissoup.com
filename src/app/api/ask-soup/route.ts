@@ -43,6 +43,7 @@ Things that are soup:
 - Gazpacho
 - Pho
 - Beef stew
+- Corn chowder - too gross and mush and slimy
 
 Things that are not soup, due to having enough substance and texture to be a meal:
 - Chili
@@ -51,7 +52,7 @@ Things that are not soup, due to having enough substance and texture to be a mea
 - Cereal
 - Tom Yum soup - has enough meat and tastes great
 - Tom Kha soup
-- Chowder - full of potatoes and seafood
+- Seafood chowder - full of potatoes and seafood
 - Smoothie - this is a drink, not a meal, so is allowed to be liquid
 
 Give a single-word bolded "Yes." or "No." answer first to the question "Is X soup?", then start a new paragraph and provide 3-6 sentences of explanation.`,

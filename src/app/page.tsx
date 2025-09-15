@@ -163,8 +163,8 @@ export default function Home() {
       <main className="w-full max-w-4xl mx-auto text-center">
         {/* Main heading and input form */}
         <div ref={headerRef} className={`transition-all duration-1000 ease-in-out ${hasAskedQuestion ? 'fixed top-0 left-0 right-0 bg-gradient-to-br from-orange-50/95 via-white/95 to-red-50/95 backdrop-blur-sm shadow-lg z-50 py-4' : 'flex items-center justify-center min-h-screen mb-16'}`}>
-          <div className={`flex flex-col md:flex-row items-end justify-center gap-4 md:gap-6 transition-all duration-1000 ${hasAskedQuestion ? 'mb-0' : 'mb-12'}`}>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight flex flex-col md:flex-row items-end gap-4 md:gap-6">
+          <div className={`flex flex-col md:flex-row items-center md:items-end justify-center gap-4 md:gap-6 transition-all duration-1000 ${hasAskedQuestion ? 'mb-0' : 'mb-12'}`}>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight flex flex-col md:flex-row items-center md:items-end gap-4 md:gap-6">
               <span>Is</span>
               <div
                 className="relative inline-block cursor-text group flex items-end"
@@ -178,7 +178,7 @@ export default function Home() {
                   onFocus={handleInputFocus}
                   onBlur={handleInputBlur}
                   onKeyDown={(e) => e.key === 'Enter' && !e.shiftKey && handleSubmit(e)}
-                  className="text-3xl md:text-4xl lg:text-5xl font-bold bg-transparent border-none outline-none text-center text-orange-600 placeholder-orange-300 min-w-0 w-auto max-w-sm md:max-w-md lg:max-w-lg resize-none leading-tight"
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-transparent border-none outline-none text-center text-orange-600 placeholder-orange-300 min-w-0 w-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg resize-none leading-tight"
                   style={{
                     width: inputValue ? `${Math.max(10, inputValue.length + 1)}ch` : '10ch',
                     caretColor: 'rgb(251 146 60)',
@@ -197,7 +197,7 @@ export default function Home() {
                 {/* Animated placeholder overlay */}
                 {!inputValue && !isFocused && (
                   <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-                    <span className="text-orange-200 font-bold text-3xl md:text-4xl lg:text-5xl">
+                    <span className="text-orange-200 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                       {currentPlaceholder}
                       <span className={`inline-block w-1 bg-orange-400 ml-1 transition-opacity duration-100 ${showCursor ? 'opacity-100' : 'opacity-0'}`} style={{ height: '0.8em' }} />
                     </span>
@@ -206,7 +206,7 @@ export default function Home() {
 
 
                 {/* Underline effect */}
-                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-orange-400 to-red-400 rounded-full transition-all duration-300 group-hover:scale-110"
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 h-0.5 md:h-1 bg-gradient-to-r from-orange-400 to-red-400 rounded-full transition-all duration-300 group-hover:scale-110"
                      style={{
                        width: `${inputWidth}px`
                      }} />
@@ -218,7 +218,7 @@ export default function Home() {
             <form onSubmit={handleSubmit} className="flex items-center">
               <button
                 type="submit"
-                className="group relative inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-orange-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none ml-4"
+                className="group relative inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-orange-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none md:ml-4"
                 disabled={!inputValue.trim() || isLoading}
               >
                 <span className="relative z-10">
@@ -250,9 +250,9 @@ export default function Home() {
             completion ? 'translate-y-0' : 'translate-y-8'
           }">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-orange-100 p-8 text-left">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-start gap-2 sm:gap-4">
+                <div className="flex-shrink-0 w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
                 </div>
