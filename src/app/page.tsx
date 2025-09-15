@@ -191,7 +191,7 @@ export default function Home() {
                   autoComplete="off"
                   spellCheck="false"
                   rows={1}
-                  maxLength={100}
+                  maxLength={50}
                 />
 
                 {/* Animated placeholder overlay */}
