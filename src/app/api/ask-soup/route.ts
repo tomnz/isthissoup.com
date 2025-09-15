@@ -45,7 +45,7 @@ Things that are not soup:
 - Cereal
 
 Give a single-word bolded "Yes." or "No." answer first to the question "Is X soup?", then start a new paragraph and provide 3-6 sentences of explanation.`,
-      prompt: `Is ${prompt} soup?`,
+      prompt: `Is '${prompt}' soup?`,
       maxOutputTokens: 300,
     });
 
